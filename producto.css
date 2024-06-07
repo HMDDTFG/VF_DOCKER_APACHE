@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.producto-detalles {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #1e1e1e; /* Fondo del contenedor más oscuro */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+    padding: 30px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.producto-detalles img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.producto-detalles img:hover {
+    transform: scale(1.05);
+}
+
+.producto-detalles h1 {
+    font-size: 2.5em;
+    color: #bb86fc; /* Color morado claro */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.producto-detalles p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #e0e0e0; /* Texto claro */
+}
+
+.producto-detalles p:first-of-type {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #cfcfcf; /* Texto un poco más claro */
+}
+
+.producto-detalles p:nth-of-type(2) {
+    font-size: 1.3em;
+    color: #a0a0a0; /* Texto más claro */
+}
+
+.producto-detalles p:nth-of-type(3) {
+    font-size: 1.1em;
+    color: #8d8d8d; /* Texto gris */
+}
+
+.producto-detalles p:nth-of-type(4) {
+    font-size: 1.4em;
+    color: #03dac6; /* Verde claro */
+    font-weight: bold;
+}
+
+.producto-detalles.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn-catalogo {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #6200ea; /* Color morado oscuro */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-catalogo:hover {
+    background-color: #3700b3; /* Morado más oscuro */
+    transform: scale(1.05);
+}
