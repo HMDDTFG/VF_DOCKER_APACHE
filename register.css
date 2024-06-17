@@ -1,0 +1,128 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Fondo general */
+}
+
+/* Fondo principal */
+.fondo_log {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cabecera */
+.cabecera_log {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.logoemp {
+    width: 150px; /* Ajustado el tamaño del logo */
+    height: auto; /* Mantener la proporción */
+    margin-right: 10px;
+}
+
+.logonom {
+    width: 300px; /* Ajustado el tamaño del nombre de la empresa */
+    height: auto; /* Mantener la proporción */
+}
+
+/* Contenido */
+.centro_log {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alinear elementos verticalmente */
+    width: 100%;
+}
+
+/* Formulario de registro */
+.form_log {
+    max-width: 600px; /* Aumentado el tamaño máximo del contenedor */
+    width: 100%;
+    padding: 40px; /* Aumentado el padding */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.form_log h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form_log label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form_log input[type="text"],
+.form_log input[type="password"],
+.form_log input[type="email"] {
+    width: 100%;
+    padding: 15px; /* Aumentado el padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Aumentado el margen inferior */
+    font-size: 16px; /* Aumentado el tamaño de la fuente */
+}
+
+.inputlog {
+    width: 100%;
+    padding: 15px; /* Aumentado el padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px; /* Aumentado el tamaño de la fuente */
+}
+
+.inputlog:hover {
+    background-color: #0056b3;
+}
+
+/* Términos y ayuda */
+.terms, .help {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.terms p, .help p {
+    font-size: 14px;
+    color: #666;
+}
+
+.terms a, .help a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.terms a:hover, .help a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
